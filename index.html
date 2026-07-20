@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fidelis Müller — Fotograf</title>
+  <meta name="description" content="Portfolio von Fidelis Müller, Fotograf.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Erzeugt die Scroll-Höhe. Die Spalten selbst sind fixed. -->
+  <div class="scroll-spacer" id="spacer"></div>
+
+  <main class="stage" id="stage">
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- LINKE SPALTE: am Boden verankert, wandert beim Scrollen nach unten -->
+    <div class="column column--left" id="colLeft">
+      <div class="column__inner" id="colLeftInner">
+
+        <figure class="frame"><img src="images/photo-11.svg" alt="" loading="lazy"></figure>
+        <figure class="frame"><img src="images/photo-09.svg" alt="" loading="lazy"></figure>
+        <figure class="frame"><img src="images/photo-07.svg" alt="" loading="lazy"></figure>
+        <figure class="frame"><img src="images/photo-05.svg" alt="" loading="lazy"></figure>
+        <figure class="frame"><img src="images/photo-03.svg" alt="" loading="lazy"></figure>
+        <figure class="frame"><img src="images/photo-01.svg" alt=""></figure>
+
+        <!-- Titelblock steht ganz unten im Stack = im Startzustand sichtbar -->
+        <div class="block block--title">
+          <h1 class="title">
+            <span class="title__line"><span>Fidelis</span></span>
+            <span class="title__line"><span>Müller</span></span>
+          </h1>
+          <p class="subtitle"><span>Fotograf</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RECHTE SPALTE: oben verankert, wandert beim Scrollen nach oben -->
+    <div class="column column--right" id="colRight">
+      <div class="column__inner" id="colRightInner">
+
+        <!-- Textblock steht ganz oben im Stack = im Startzustand sichtbar -->
+        <div class="block block--about">
+          <p class="about">
+            Ich fotografiere Menschen, Licht und die stillen Momente
+            dazwischen — am liebsten dort, wo beides zusammenfällt.
+          </p>
+          <p class="about about--meta">
+            Verfügbar für Auftragsarbeiten<br>
+            <a href="mailto:mail@fidelismueller.de">mail@fidelismueller.de</a>
+          </p>
+        </div>
+
+        <figure class="frame"><img src="images/photo-02.svg" alt=""></figure>
+        <figure class="frame"><img src="images/photo-04.svg" alt="" loading="lazy"></figure>
+        <figure class="frame"><img src="images/photo-06.svg" alt="" loading="lazy"></figure>
+        <figure class="frame"><img src="images/photo-08.svg" alt="" loading="lazy"></figure>
+        <figure class="frame"><img src="images/photo-10.svg" alt="" loading="lazy"></figure>
+        <figure class="frame"><img src="images/photo-12.svg" alt="" loading="lazy"></figure>
+
+      </div>
+    </div>
+
+    <div class="scroll-hint" id="hint">
+      <span>Scroll</span>
+      <svg viewBox="0 0 12 28" aria-hidden="true"><path d="M6 0v24M1 19l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </div>
+
+    <div class="progress" aria-hidden="true"><div class="progress__bar" id="progressBar"></div></div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
